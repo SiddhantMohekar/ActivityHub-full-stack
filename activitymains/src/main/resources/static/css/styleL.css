@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background-color: #121420;
+}
+.login-form{
+    position: relative;
+    min-height: 100vh;
+    z-index: 0;
+    padding: 40px;
+    justify-content: center;
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.login-form h1{
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    
+}
+
+.login-form h2{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+
+.login-form .main{
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+
+}
+
+.content{
+    flex-basis: 100%;
+    padding: 6em 6em;
+    background: #fff;
+    box-shadow: 2px 9px 49px -17px rgba(195, 43, 43, 0.1);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-image{
+    flex-basis: 100%;
+    background: #e7e7ea;
+    background-size: cover;
+    padding: 40px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+    display: grid;
+}
+
+.form-image img{
+    max-width: 100%;
+}
+
+P{
+    color: #666;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.6;
+    text-align: center;
+}
+
+.btn,button,input{
+    border-radius: 25px;
+}
+
+.btn,button,input:hover{
+    transition: 0.5s ease;
+}
+a{
+    text-decoration: none;
+}
+.login-form form{
+    margin: 30px 0;
+}
+.login-form input{
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 15px;
+    color: #999;
+    text-align: left;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    border: none;
+    background: #f7fafc;
+    transition: 0.3s ease;
+}
+
+.login-form input:focus{
+    background: transparent;
+    border: 1px solid #4e54b6;
+}
+
+.login-form button{
+    color: #fff;
+    background: #181930;
+    font-size: 18px;
+    border: none;
+    width: 100%;
+    padding: 14px 15px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}

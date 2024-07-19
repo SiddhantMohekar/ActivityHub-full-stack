@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<link rel="stylesheet" href="styleL.css">
+</head>
+dy>
+    <body>
+        <div class="login-form">
+            <h1>Register</h1>
+            <div class="container">
+                <div class="main">
+                    <div class="content">
+                        <h2>Register</h2>
+                        <form action="#" th:action="@{/add}" method="post" enctype="multipart/form-data">
+
+                            
+                            <input name="username" type="text" placeholder="Username" required autofocus> 
+                            <input name="email" type="email" placeholder="Email" required autofocus> 
+                            <input type="password" placeholder="Password" name="password" required autofocus> 
+                            <input name="phoneNo" type="number" placeholder="Phone No." required autofocus> 
+                            <input type="file" id="image" name="image" accept="image/*" required>
+                            <Button type="submit" value="Save">Submit</Button>
+                            </form>
+                        
+                    </div>
+                    <div class="form-image">
+                        <img src="login (1).png" alt="">
+                     </div>
+                </div>
+                
+            </div>
+        </div>
+    
+</body>
+</html>

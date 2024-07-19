@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>AddDetails</title>
+    <link rel="stylesheet" href="styleED.css">
+</head>
+<body>
+   
+    <div class="form">
+        <div class="form-box">
+            <div class="title">
+                <h1>Add Details</h1>
+            </div>
+            <form class="from-addevent" action="#" th:action="@{/addEvent}" method="post" enctype="multipart/form-data">
+                <label class="name">Name of Event</label><br>
+                <input type="text" name="nameEvent"><br>
+                <label class="email">Description</label><br>
+                <input type="text" name="description"><br>
+                <label class="date">Date</label><br>
+                <input type="date" name="expDate"><br>
+                <label class="Poster">Poster</label><br>
+                <input type="file" name="image"/>
+                <button  type="submit" value="Save">Submit</button>
+                
+                </form>
+            
+
+            
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <style>
+        /* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 75px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+   
+}
+
+nav .logo p{
+    color: white;
+    float: left;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    margin-left: 60%;
+}
+
+nav li{
+    list-style: none;
+    font-weight: bold;
+    margin-right: 25px;
+    
+}
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav li:hover{
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.vetical-panel{
+    height: 830px;
+    width: 200px;
+    background-color: black;
+}
+
+.vetical-panel ul{
+    font-size: 20px;
+    justify-content: space-evenly;
+}
+
+.vetical-panel ul li{
+    
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.vetical-panel ul li a i{
+    margin-right: 5px;
+    display: inline;
+
+}
+
+.vetical-panel ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+
+.vetical-panel ul li:hover{
+    background-color: #38383a;
+}
+
+.vetical-panel ul li:hover a{
+    color: antiquewhite;
+}
+
+ */
+
+ *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'poppins',sans-serif;
+ }
+
+ nav{
+    background-color: #121420;
+    height: 80px;
+    width: 100%;
+ }
+
+ nav label img{
+    margin-top: 15px;
+    width: 40px;
+    height: 50px;
+ }
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+  background: #373e61;
+  transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+#check{
+    display: none;
+}
+
+
+
+@media (max-width: 952px){
+    lable.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #252e5f;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+    a.hover,a.active{
+        background: none;
+        color: #121420;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+
+/* image slider */
+
+.image-container{
+   position: relative;
+}
+
+.image-list{
+    display: flex;
+}
+
+.image-item{
+     min-width: 100%;
+}
+
+.image-item img{
+   
+    width: 100%;
+}
+
+.image-btn-container{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.slider-btn{
+    border: 2px solid transparent;
+    padding: 100px 20px;
+    font-size: 30px;
+    font-weight: 200;
+    background-color: transparent;
+    color: white;
+
+}
+
+.slider-btn:focus{
+    border: 2px solid #121420;
+}
+
+.event-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box{
+    margin-top: 15px;
+    height: 475px;
+    width: 23%;
+    background-color: white;
+    padding: 20px 0px 15px;
+}
+
+.box-img{
+    height: 350px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+   
+}
+
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p{
+    color: #007185;
+}
+
+.btn{
+    width: 45%;
+    height: 40px;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+footer{
+    margin-top: 15px;
+}
+
+.foot-panel1{
+    background-color: #252e5f;
+    height: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-panel2{
+    height: 300px;
+    background-color: #121420;
+    color: white;
+}
+
+
+
+.foot-ul p{
+    font-weight: 700;
+}
+
+.foot-ul a{
+    margin-top: 10px;
+    font-size: 0.85rem;
+    display: block;
+
+}
+
+
+.homebg{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+     /* background-color: #e2fafa;  */
+  }
+
+
+
+
+
+    </style>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+
+        <label class="logo">ActivityHub</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="/Events">Events</a></li>
+            <li><a href="/Profile">Profile</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="/Login">Login</a></li>
+            <li><a href="/Register">Register</a></li>
+            <li><a href="/AdminLogin">Admin Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- image slider -->
+
+    <section id="section1">
+
+        <svg  id="header_bg" class="homebg" viewBox="0 0 500 80" preserveAspectRatio="none">
+            <defs>
+                <radialGradient id="Gradient" cx="0.5" cy="0.5" r="0.5" fx="0.75" fy="0.25">
+                    <stop offset="0%" stop-color="#07365d"/>
+                    <stop offset="100%" stop-color="#000717"/>
+                </radialGradient>
+            </defs>
+            <path d="M0,0 L0,55 Q250,65 500,55 L500,0 Z" fill="url(#Gradient)"/><!--fill="#e2fafa"-->
+        </svg>
+        >
+        <div className='title'>
+            <h1>Walchand Institute of Tecnhology <br/>Exclence beyond classroom</h1>
+            <p>
+                <span>"Your greatness is <br/>not what you have. <br />it's what you give"<br/></span>
+            </p>
+        
+        </div>
+    </section>
+    
+    <div class="event-section">
+        <div class="box" >
+            <div class="box-content">
+                <h2>Name of the Event</h2>
+                <div class="box-img" style="background-image: url('pos1.jpg');">
+               
+                </div>
+                <Button class="btn">Register Now</Button>
+            <Button class="btn">Explore</Button>
+            </div>
+        </div>
+        <div class="box"><div class="box-content">
+            <h2>Name of the Event</h2>
+            <div class="box-img" style="background-image: url('pos1.jpg');">
+           
+            </div>
+            <Button class="btn">Register Now</Button>
+            <Button class="btn">Explore</Button>
+        </div>
+       </div>
+        <div class="box3 box"><div class="box-content">
+            <h2>Name of the Event</h2>
+            <div class="box-img" style="background-image: url('pos1.jpg');">
+           
+            </div>
+            <Button class="btn">Register Now</Button>
+            <Button class="btn">Explore</Button>
+         </div>
+        </div>
+        
+
+</div>
+
+    <section id="footer-section">
+        <footer>
+            <div class="foot-panel1">
+                Back to top
+            </div>
+
+            <div class="foot-panel2">
+                <ul class="foot-ul">
+                    <li><p>Get to Know Us</p></li>
+                    <li><a href="#">Career's</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+               
+            </div>
+        </footer>
+    </section>
+
+</body>
+</html>

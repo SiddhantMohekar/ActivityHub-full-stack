@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<link rel="stylesheet" href="styleReg.css"> 
+<head>
+
+    <div class="form">
+        <div class="form-box">
+            <div class="title">
+                <h1>Register for Event</h1>
+            </div>
+            
+            <form  action="#" th:action="@{/Events/RegisterToEvent}" method="post">
+
+            <label class="name">Full Name (Starting With Surname)</label>
+            <input type="text" name="fullName">
+            <label class="email">Email</label>
+            <input type="text" name="email">
+            <label class="Name">Phone Number</label>
+            <input type="text" name="phoneNum">
+            <label class="Name">College Name</label>
+            <input type="text" name="collegeName">
+            <label class="Name">Department</label>
+            <select name="department">
+                <option value="option1">Computer Science</option>
+                <option value="option2">Information Technology</option>
+                <option value="option3">Electronics and Tele-communication Enginnering</option>
+            </select>
+            <label class="Name">Year</label>
+            <select name="year">
+                <option value="option1">First Year</option>
+                <option value="option2">Second Year</option>
+                <option value="option3">Third Year</option>
+                <option value="option3">Fourth Year</option>
+            </select>
+            <label class="Name">Name of Paticipant 1</label>
+            <input type="text" name="paticipent1">
+            <label class="Name">Name of Paticipant 2</label>
+            <input type="text" name="participant2">
+            <label class="Name">UTR Number</label>
+            <input type="text" name="utr">
+
+            <div class="submit-btn">
+                <button type="submit">Submit</button>
+            </div>
+
+            </form>
+            
+        </div>
+    </div>
+   
+        
+    </div>
+  </div>
+</head>
+</html>
